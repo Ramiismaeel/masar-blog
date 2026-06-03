@@ -8,7 +8,7 @@
 
 ## Online preview
 
-[Masar blog] (https://masar-blog.netlify.app)
+[Masar blog](https://masar-blog.netlify.app)
 
 ## Setup
 

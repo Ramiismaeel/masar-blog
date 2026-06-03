@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 const route = useRoute()
 const { t } = useI18n()
 const head = useLocaleHead()
-const title = computed(() => t(route?.meta?.title ?? "masar"))
+const title = computed(() => t((route?.meta?.title as string) ?? "masar"))
 </script>
 
 <template>

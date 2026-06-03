@@ -1,5 +1,41 @@
 {
   "masar": "Masar",
   "title": "Masar blog",
-  "home": "Home"
+  "home": {
+    "title": "Home",
+    "hero": {
+      "eyebrow": "Stories, ideas, and practical notes",
+      "title": "A blog for thoughtful reading and fresh ideas",
+      "subtitle": "Discover articles about design, technology, creativity, and the small things that make digital products feel alive.",
+      "ctaPrimary": "Read latest posts",
+      "ctaSecondary": "Explore categories"
+    },
+    "featured": {
+      "title": "Featured articles",
+      "subtitle": "A few handpicked posts to get you started."
+    },
+    "topics": {
+      "title": "Popular topics",
+      "design": "Design",
+      "development": "Development",
+      "productivity": "Productivity",
+      "lifestyle": "Lifestyle"
+    },
+    "newsletter": {
+      "title": "Stay in the loop",
+      "subtitle": "Get fresh posts, useful ideas, and occasional updates straight to your inbox.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe"
+    },
+    "about": {
+      "title": "Why this blog?",
+      "text": "A simple place to share ideas, build in public, and publish content that is clear, useful, and enjoyable to read."
+    }
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "about": {
+    "title": "About us"
+  }
 }

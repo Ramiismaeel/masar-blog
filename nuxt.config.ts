@@ -12,6 +12,13 @@ export default defineNuxtConfig({
       include: ["vue", "@vue/devtools-core", "@vue/devtools-kit"],
     },
   },
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1, maximum-scale=6",
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
   i18n: {
     baseUrl: siteUrl,
     locales: [
@@ -41,6 +48,19 @@ export default defineNuxtConfig({
   ogImage: {
     enabled: process.env.NODE_ENV !== "development",
     zeroRuntime: true,
+  },
+  fonts: {
+    defaults: {
+      weights: [400, 700],
+      styles: ["normal"],
+    },
+  },
+  colorMode: {
+    preference: "system", // 'light' | 'dark' | 'system'
+    fallback: "light",
+    storageKey: "theme",
+    storage: "cookie",
+    classSuffix: "",
   },
 
   modules: [

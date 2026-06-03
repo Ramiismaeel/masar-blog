@@ -1,4 +1,6 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite"
+const siteUrl =
+  process.env.NUXT_PUBLIC_SITE_URL || "https://masar-blog.netlify.app"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2026-06-03",
@@ -8,6 +10,32 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
     optimizeDeps: {
       include: ["vue", "@vue/devtools-core", "@vue/devtools-kit"],
+    },
+  },
+  i18n: {
+    baseUrl: siteUrl,
+    locales: [
+      {
+        code: "en",
+        file: "en.json",
+        language: "en-US",
+        name: "English",
+        icon: "gb-flag",
+      },
+      {
+        code: "de",
+        file: "de.json",
+        language: "de-DE",
+        name: "Deutsch",
+        icon: "de-flag",
+      },
+    ],
+    defaultLocale: "en",
+    strategy: "prefix_except_default",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
     },
   },
   ogImage: {
@@ -29,4 +57,4 @@ export default defineNuxtConfig({
   $production: {
     modules: ["@nuxt/scripts", "@nuxtjs/sitemap", "nuxt-og-image"],
   },
-});
+})
